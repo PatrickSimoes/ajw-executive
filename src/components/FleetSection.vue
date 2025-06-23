@@ -20,8 +20,7 @@
           </div>
 
           <div class="p-6 flex-1 flex flex-col">
-            <span class="text-amber-400 text-sm font-semibold">{{ vehicle.category }}</span>
-            <h3 class="text-xl font-bold text-white mb-4">{{ vehicle.name }}</h3>
+            <h3 class="text-xl font-bold text-amber-400  font-semiboldmb-4">{{ vehicle.name }}</h3>
 
             <div class="space-y-2 mb-6 flex-1">
               <div v-for="(feature, idx) in vehicle.features" :key="idx" class="flex items-center">
@@ -44,41 +43,51 @@
 
 <script lang="ts" setup>
 import bydKing1 from '@/assets/fleet/byd-king/byd-king-1.jpeg'
-import corolla from '@/assets/fleet/corolla-hybrido-altis/corolla-hybrido.jpeg'
 import sentra from '@/assets/fleet/sentra/sentra-1.jpeg'
 import tcross from '@/assets/fleet/t-cros/Tcross-1.jpeg'
-
-interface Vehicle {
-  name: string
-  category: string
-  image: string
-  features: string[]
-}
+import corolla from '@/assets/fleet/corolla-hybrido-altis/corolla-hybrido.jpeg'
+import type { Vehicle } from './interfaces/fleet.interface'
 
 const vehicles: Vehicle[] = [
   {
     name: 'BYD King',
-    category: 'SUV Elétrico Premium',
     image: bydKing1,
-    features: ['Totalmente Elétrico', '7 Lugares', 'Tecnologia Avançada', 'Silencioso']
+    features: [
+      'Interior silencioso que promove relaxamento',
+      'Espaço amplo com conforto garantido',
+      'Acabamento premium que envolve todos a bordo',
+      'Conectividade avançada para manter você produtivo'
+    ]
   },
   {
     name: 'Nissan Sentra',
-    category: 'Sedan Executivo',
     image: sentra,
-    features: ['Conforto Superior', 'Ar Condicionado', 'Sistema Multimídia', 'Porta-malas Amplo']
+    features: [
+      'Assentos ergonômicos que evitam cansaço',
+      'Climatização dual-zone para conforto individual',
+      'Sistema de som envolvente para seu entretenimento',
+      'Ambiente sofisticado que inspira foco e bem-estar'
+    ]
   },
   {
     name: 'Volkswagen T-Cross',
-    category: 'SUV Compacto',
     image: tcross,
-    features: ['Design Moderno', 'Espaço Interno', 'Conectividade', 'Economia']
+    features: [
+      'Cabine acolhedora que garante conforto urbano',
+      'Iluminação ambiente personalizável para qualquer clima',
+      'Espaço de bagagem otimizado para seus pertences',
+      'Conectividade intuitiva para sua comodidade'
+    ]
   },
   {
     name: 'Toyota Corolla Hybrid',
-    category: 'Sedan Híbrido',
     image: corolla,
-    features: ['Motor Híbrido', 'Baixo Consumo', 'Tecnologia Toyota', 'Sustentável']
+    features: [
+      'Viagens suaves e silenciosas para total relaxamento',
+      'Menos paradas, mais tempo de conforto contínuo',
+      'Cabine climatizada para temperatura perfeita',
+      'Acabamento refinado que impressiona seus convidados'
+    ]
   }
 ]
 

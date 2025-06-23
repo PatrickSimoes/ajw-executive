@@ -4,7 +4,6 @@ import { RouterView } from 'vue-router'
 
 <template>
   <header>
-    <h1>Ola mundo!</h1>
   </header>
 
   <RouterView />
