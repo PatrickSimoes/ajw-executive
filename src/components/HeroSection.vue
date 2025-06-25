@@ -18,7 +18,7 @@
           EXECUTIVO
         </h1>
 
-        <p class="text-xl md:text-3x2 text-gray-300 mb-8 max-w-3x2 mx-auto">
+        <p class="text-xl md:text-3xl text-gray-300 mb-8 max-w-3xl mx-auto">
           Excelência em mobilidade urbana com conforto, segurança e pontualidade.
           Sua experiência de transporte nunca mais será a mesma.
         </p>
