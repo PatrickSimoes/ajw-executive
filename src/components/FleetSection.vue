@@ -20,7 +20,7 @@
           </div>
 
           <div class="p-6 flex-1 flex flex-col">
-            <h3 class="text-xl font-bold text-amber-400  font-semiboldmb-4">{{ vehicle.name }}</h3>
+            <h3 class="font-semibold mb-4">{{ vehicle.name }}</h3>
 
             <div class="space-y-2 mb-6 flex-1">
               <div v-for="(feature, idx) in vehicle.features" :key="idx" class="flex items-center">
