@@ -20,7 +20,7 @@
           </div>
 
           <div class="p-6 flex-1 flex flex-col">
-            <h3 class="text-xl font-bold text-amber-400  font-semiboldmb-4">{{ vehicle.name }}</h3>
+            <h3 class="font-semibold mb-4 text-xl text-amber-400">{{ vehicle.name }}</h3>
 
             <div class="space-y-2 mb-6 flex-1">
               <div v-for="(feature, idx) in vehicle.features" :key="idx" class="flex items-center">
@@ -29,7 +29,6 @@
               </div>
             </div>
 
-            <!-- botão dentro de cada card -->
             <a :href="whatsappLink(vehicle.name)" target="_blank" rel="noopener"
               class="mt-auto inline-block bg-amber-500 text-black text-center w-full py-3 rounded-lg font-bold text-lg hover:bg-amber-400 transition-all">
               Reservar Veículo
