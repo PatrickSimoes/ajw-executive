@@ -12,7 +12,7 @@
 
       <div class="max-w-4xl mx-auto">
         <div class="grid md:grid-cols-3 gap-8">
-          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer"
+          <a :href="whatsappLink" target="_blank" rel="noopener noreferrer"
             class="block bg-gray-900/50 backdrop-blur-sm border border-amber-500/20 rounded-2xl p-8 text-center hover:border-amber-500/50 transition-all transform hover:scale-105">
             <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
               <img src="@/assets/social-media/WhatsApp.svg.png" alt="WhatsApp" class="w-12 h-12" />
@@ -43,6 +43,9 @@
 </template>
 
 <script setup lang="ts">
+import { generateWhatsAppLink } from '@/utils/whatsapp'
+
+const whatsappLink = generateWhatsAppLink('Olá, gostaria de mais informações.')
 </script>
 
 <style scoped></style>

@@ -46,6 +46,7 @@ import sentra from '@/assets/fleet/sentra/sentra-1.jpeg'
 import tcross from '@/assets/fleet/t-cros/Tcross-1.jpeg'
 import corolla from '@/assets/fleet/corolla-hybrido-altis/corolla-hybrido.jpeg'
 import type { Vehicle } from './interfaces/fleet.interface'
+import { generateWhatsAppLink } from '@/utils/whatsapp'
 
 const vehicles: Vehicle[] = [
   {
@@ -90,9 +91,7 @@ const vehicles: Vehicle[] = [
   }
 ]
 
-const whatsappNumber = '554191922590'
 function whatsappLink(vehicleName: string): string {
-  const text = encodeURIComponent(`Olá, gostaria de reservar o ${vehicleName}.`)
-  return `https://wa.me/${whatsappNumber}?text=${text}`
+  return generateWhatsAppLink(`Olá, gostaria de reservar o ${vehicleName}.`)
 }
 </script>
