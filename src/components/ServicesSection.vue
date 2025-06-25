@@ -1,5 +1,5 @@
 <template>
-  <section id="services" class="py-10 bg-gray-900 min-h-screen flex flex-col justify-between">
+  <section id="services" class="py-10 scroll-mt-12 bg-gray-900 min-h-screen flex flex-col justify-between">
     <div class="container mx-auto px-6">
       <div class="text-center mb-12">
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
