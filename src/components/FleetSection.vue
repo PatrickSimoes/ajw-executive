@@ -3,10 +3,10 @@
     <div class="container mx-auto px-6">
       <div class="text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
-          Nossa <span class="text-amber-400">Frota</span>
+          {{ t('fleetSection.title') }}
         </h2>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto">
-          Veículos modernos e bem conservados para garantir sua comodidade e segurança
+          {{ t('fleetSection.subtitle') }}
         </p>
       </div>
 
@@ -25,7 +25,7 @@
             <div class="space-y-2 mb-6 flex-1">
               <div v-for="(feature, idx) in vehicle.features" :key="idx" class="flex items-center">
                 <div class="w-1.5 h-1.5 bg-amber-400 rounded-full mr-3"></div>
-                <span class="text-gray-300 text-sm">{{ feature }}</span>
+                <span class="text-gray-300 text-sm">{{ t(feature) }}</span>
               </div>
             </div>
 
@@ -56,40 +56,40 @@ const vehicles: Vehicle[] = [
     name: 'BYD King',
     image: bydKing1,
     features: [
-      'Interior silencioso que promove relaxamento',
-      'Espaço amplo com conforto garantido',
-      'Acabamento premium que envolve todos a bordo',
-      'Conectividade avançada para manter você produtivo'
+      'fleetSection.vehicles.bydKing.features.0',
+      'fleetSection.vehicles.bydKing.features.1',
+      'fleetSection.vehicles.bydKing.features.2',
+      'fleetSection.vehicles.bydKing.features.3'
     ]
   },
   {
     name: 'Nissan Sentra',
     image: sentra,
     features: [
-      'Assentos ergonômicos que evitam cansaço',
-      'Climatização dual-zone para conforto individual',
-      'Sistema de som envolvente para seu entretenimento',
-      'Ambiente sofisticado que inspira foco e bem-estar'
+      'fleetSection.vehicles.sentra.features.0',
+      'fleetSection.vehicles.sentra.features.1',
+      'fleetSection.vehicles.sentra.features.2',
+      'fleetSection.vehicles.sentra.features.3'
     ]
   },
   {
     name: 'Volkswagen T-Cross',
     image: tcross,
     features: [
-      'Cabine acolhedora que garante conforto urbano',
-      'Iluminação ambiente personalizável para qualquer clima',
-      'Espaço de bagagem otimizado para seus pertences',
-      'Conectividade intuitiva para sua comodidade'
+      'fleetSection.vehicles.tcross.features.0',
+      'fleetSection.vehicles.tcross.features.1',
+      'fleetSection.vehicles.tcross.features.2',
+      'fleetSection.vehicles.tcross.features.3'
     ]
   },
   {
     name: 'Toyota Corolla Hybrid',
     image: corolla,
     features: [
-      'Viagens suaves e silenciosas para total relaxamento',
-      'Menos paradas, mais tempo de conforto contínuo',
-      'Cabine climatizada para temperatura perfeita',
-      'Acabamento refinado que impressiona seus convidados'
+      'fleetSection.vehicles.corolla.features.0',
+      'fleetSection.vehicles.corolla.features.1',
+      'fleetSection.vehicles.corolla.features.2',
+      'fleetSection.vehicles.corolla.features.3'
     ]
   }
 ]

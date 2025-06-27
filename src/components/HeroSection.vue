@@ -14,23 +14,22 @@
         </div>
 
         <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-          <span class="text-amber-400">TRANSPORTE</span><br />
-          EXECUTIVO
+          <span class="text-amber-400">{{ t('hero.transport') }}</span><br />
+          {{ t('hero.executive') }}
         </h1>
 
         <p class="text-xl md:text-3xl text-gray-300 mb-8 max-w-3xl mx-auto">
-          Excelência em mobilidade urbana com conforto, segurança e pontualidade.
-          Sua experiência de transporte nunca mais será a mesma.
+          {{ t('hero.subtitle') }}
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a href="#services"
             class="bg-amber-500 text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-amber-400 transition-all transform hover:scale-105 shadow-lg">
-            Nossos Serviços
+            {{ t('hero.ctaServices') }}
           </a>
           <a href="#contact"
             class="border-2 border-amber-500 text-amber-400 px-8 py-4 rounded-lg font-bold text-lg hover:bg-amber-500 hover:text-black transition-all">
-            Solicitar Orçamento
+            {{ t('hero.ctaQuote') }}
           </a>
         </div>
       </div>
@@ -43,3 +42,9 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+</script>

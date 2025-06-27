@@ -3,10 +3,10 @@
     <div class="container mx-auto px-6">
       <div class="text-center mb-12">
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
-          Nossos <span class="text-amber-400">Serviços</span>
+          {{ t('servicesSection.title') }}
         </h2>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto">
-          Soluções completas de transporte executivo para atender todas as suas necessidades.
+          {{ t('servicesSection.subtitle') }}
         </p>
       </div>
 
@@ -16,25 +16,25 @@
           <div class="flex items-center mb-4">
             <component :is="service.icon" class="w-8 h-8 text-amber-400 flex-shrink-0" />
             <h3 class="text-2xl font-bold text-white ml-3">
-              {{ service.title }}
+              {{ t(service.title) }}
             </h3>
           </div>
 
           <p class="text-gray-300 mb-6 leading-relaxed">
-            {{ service.description }}
+            {{ t(service.description) }}
           </p>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 flex-1">
             <div v-for="(feat, i) in service.features" :key="i" class="flex items-center">
               <div class="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
-              <span class="text-gray-300 text-sm">{{ feat }}</span>
+              <span class="text-gray-300 text-sm">{{ t(feat) }}</span>
             </div>
           </div>
 
           <!-- CTA dentro do card -->
           <a href="#contact"
             class="mt-6 inline-block bg-amber-500 text-black text-center w-full py-3 rounded-lg font-bold text-lg hover:bg-amber-400 transition-all transform hover:scale-105">
-            Solicitar Serviço
+            {{ t('servicesSection.cta') }}
           </a>
         </div>
       </div>
@@ -44,40 +44,53 @@
 
 <script lang="ts" setup>
 import { Car, MapPin, Music, Globe } from 'lucide-vue-next'
-import type { Service } from './interfaces/services.interface';
+import type { Service } from './interfaces/services.interface'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 const services: Service[] = [
   {
     icon: Car,
-    title: 'Transfer',
-    description:
-      'Traslados executivos para aeroportos, hotéis e eventos empresariais com pontualidade e conforto garantidos.',
-    features: ['Aeroportos', 'Hotéis', 'Eventos', 'Reuniões'],
+    title: 'servicesSection.items.transfer.title',
+    description: 'servicesSection.items.transfer.description',
+    features: [
+      'servicesSection.items.transfer.features.0',
+      'servicesSection.items.transfer.features.1',
+      'servicesSection.items.transfer.features.2',
+      'servicesSection.items.transfer.features.3'
+    ],
   },
   {
     icon: MapPin,
-    title: 'City Tour',
-    description:
-      'Explore a cidade com nossos roteiros personalizados, acompanhado de motoristas experientes e veículos premium.',
+    title: 'servicesSection.items.cityTour.title',
+    description: 'servicesSection.items.cityTour.description',
     features: [
-      'Roteiros Personalizados',
-      'Veículos Premium',
-      'Flexibilidade Total',
+      'servicesSection.items.cityTour.features.0',
+      'servicesSection.items.cityTour.features.1',
+      'servicesSection.items.cityTour.features.2'
     ],
   },
   {
     icon: Music,
-    title: 'Shows em Curitiba',
-    description:
-      'Transporte executivo do aeroporto ou hotel até o show, com todo conforto e segurança para você chegar no ritmo certo.',
-    features: ['Aeroporto → Show', 'Hotel → Show', 'Retorno Incluso', 'Veículos Premium'],
+    title: 'servicesSection.items.shows.title',
+    description: 'servicesSection.items.shows.description',
+    features: [
+      'servicesSection.items.shows.features.0',
+      'servicesSection.items.shows.features.1',
+      'servicesSection.items.shows.features.2',
+      'servicesSection.items.shows.features.3'
+    ],
   },
   {
     icon: Globe,
-    title: 'Passeios',
-    description:
-      'Passeios por pontos turísticos e rotas exclusivas, conhecendo toda a cultura e beleza de forma confortável.',
-    features: ['Roteiros Clássicos', 'Passeios Temáticos', 'Flexibilidade de Horários'],
+    title: 'servicesSection.items.tours.title',
+    description: 'servicesSection.items.tours.description',
+    features: [
+      'servicesSection.items.tours.features.0',
+      'servicesSection.items.tours.features.1',
+      'servicesSection.items.tours.features.2'
+    ],
   },
 ]
 </script>

@@ -11,23 +11,22 @@
             </div>
           </div>
           <p class="text-gray-300 mb-4 max-w-md">
-            A AJW Executive é uma empresa especializada em transporte executivo de alto padrão, oferecendo serviços
-            personalizados com foco em pontualidade, conforto e segurança.
+            {{ t('footerSection.about') }}
           </p>
         </div>
 
         <div>
-          <h4 class="text-white font-bold mb-4">Serviços</h4>
+          <h4 class="text-white font-bold mb-4">{{ t('footerSection.servicesTitle') }}</h4>
           <ul class="space-y-2 text-gray-300">
-            <li><a href="#services" class="hover:text-amber-400 transition-colors">Transfer Aeroporto</a></li>
-            <li><a href="#services" class="hover:text-amber-400 transition-colors">City Tour</a></li>
-            <li><a href="#services" class="hover:text-amber-400 transition-colors">Transporte Corporativo</a></li>
-            <li><a href="#services" class="hover:text-amber-400 transition-colors">Eventos Especiais</a></li>
+            <li><a href="#services" class="hover:text-amber-400 transition-colors">{{ t('footerSection.services.airport') }}</a></li>
+            <li><a href="#services" class="hover:text-amber-400 transition-colors">{{ t('footerSection.services.cityTour') }}</a></li>
+            <li><a href="#services" class="hover:text-amber-400 transition-colors">{{ t('footerSection.services.corporate') }}</a></li>
+            <li><a href="#services" class="hover:text-amber-400 transition-colors">{{ t('footerSection.services.events') }}</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="text-white font-bold mb-4">Contato</h4>
+          <h4 class="text-white font-bold mb-4">{{ t('footerSection.contactTitle') }}</h4>
           <ul class="space-y-2 text-gray-300">
             <li>(11) 99999-9999</li>
             <li>contato@ajwexecutive.com.br</li>
@@ -36,16 +35,16 @@
       </div>
 
       <div class="border-t border-amber-500/20 mt-8 pt-8 text-center">
-        <p class="text-gray-400">
-          © {{ currentYear }}<a href="https://github.com/PatrickSimoes" target="_blank" rel="noopener noreferrer"
-            class="text-amber-400 ml-2">Patrick Simões</a>. Todos os direitos reservados.
-        </p>
+        <p class="text-gray-400" v-html="t('footerSection.rights', { year: currentYear })"></p>
       </div>
     </div>
   </footer>
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 const currentYear = new Date().getFullYear();
 </script>
 
