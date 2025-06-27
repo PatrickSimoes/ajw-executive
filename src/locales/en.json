@@ -12,5 +12,140 @@
   },
   "buttons": {
     "reserveVehicle": "Book Vehicle"
+  },
+  "hero": {
+    "transport": "TRANSPORT",
+    "executive": "EXECUTIVE",
+    "subtitle": "Excellence in urban mobility with comfort, safety and punctuality. Your transportation experience will never be the same.",
+    "ctaServices": "Our Services",
+    "ctaQuote": "Request Quote"
+  },
+  "servicesSection": {
+    "title": "Our Services",
+    "subtitle": "Complete executive transport solutions for all your needs.",
+    "cta": "Request Service",
+    "items": {
+      "transfer": {
+        "title": "Transfer",
+        "description": "Executive transfers to airports, hotels and corporate events with guaranteed punctuality and comfort.",
+        "features": [
+          "Airports",
+          "Hotels",
+          "Events",
+          "Meetings"
+        ]
+      },
+      "cityTour": {
+        "title": "City Tour",
+        "description": "Explore the city with our personalized routes, accompanied by experienced drivers and premium vehicles.",
+        "features": [
+          "Custom Routes",
+          "Premium Vehicles",
+          "Total Flexibility"
+        ]
+      },
+      "shows": {
+        "title": "Shows in Curitiba",
+        "description": "Executive transport from the airport or hotel to the show, with all the comfort and safety for you to arrive in the right rhythm.",
+        "features": [
+          "Airport → Show",
+          "Hotel → Show",
+          "Return Included",
+          "Premium Vehicles"
+        ]
+      },
+      "tours": {
+        "title": "Tours",
+        "description": "Tours of tourist attractions and exclusive routes, getting to know all the culture and beauty in comfort.",
+        "features": [
+          "Classic Routes",
+          "Theme Tours",
+          "Flexible Hours"
+        ]
+      }
+    }
+  },
+  "fleetSection": {
+    "title": "Our Fleet",
+    "subtitle": "Modern and well-maintained vehicles to ensure your convenience and safety",
+    "vehicles": {
+      "bydKing": {
+        "features": [
+          "Quiet interior that promotes relaxation",
+          "Ample space with guaranteed comfort",
+          "Premium finish that surrounds everyone on board",
+          "Advanced connectivity to keep you productive"
+        ]
+      },
+      "sentra": {
+        "features": [
+          "Ergonomic seats that prevent fatigue",
+          "Dual-zone climate control for individual comfort",
+          "Immersive sound system for your entertainment",
+          "Sophisticated environment that inspires focus and well-being"
+        ]
+      },
+      "tcross": {
+        "features": [
+          "Cozy cabin that ensures urban comfort",
+          "Customizable ambient lighting for any mood",
+          "Optimized luggage space for your belongings",
+          "Intuitive connectivity for your convenience"
+        ]
+      },
+      "corolla": {
+        "features": [
+          "Smooth and quiet rides for total relaxation",
+          "Fewer stops, more time of continuous comfort",
+          "Climatized cabin for perfect temperature",
+          "Refined finish that impresses your guests"
+        ]
+      }
+    }
+  },
+  "aboutSection": {
+    "title": "Why choose {company}?",
+    "description": "AJW Executive is a company specialized in high-standard executive transportation, offering personalized services focused on punctuality, comfort and safety. We operate with premium vehicles and highly trained drivers, ensuring an exclusive experience for both corporate commitments and personal trips or airport transfers.",
+    "valuesTitle": "Our Values",
+    "stats": {
+      "punctuality": "Guaranteed punctuality",
+      "availability": "Total availability",
+      "rating": "Customer rating",
+      "trips": "Trips made"
+    },
+    "differentials": {
+      "vision": {
+        "title": "Vision",
+        "desc": "To be recognized as a reference in executive transport in Brazil, standing out for excellence in service, continuous innovation and commitment to the customer experience."
+      },
+      "mission": {
+        "title": "Mission",
+        "desc": "Provide executive transport solutions with excellence, safety and sophistication, offering our clients a comfortable, punctual and personalized experience."
+      },
+      "values": {
+        "title": "Values",
+        "desc": "Excellence in service, punctuality, safety, discretion, comfort and continuous innovation in every detail of our service."
+      }
+    },
+    "imageAlt": "{company} Professionalism"
+  },
+  "contactSection": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch through our social networks",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "telegram": "Telegram"
+  },
+  "footerSection": {
+    "about": "AJW Executive is a company specialized in high-standard executive transport, offering personalized services focused on punctuality, comfort and safety.",
+    "servicesTitle": "Services",
+    "services": {
+      "airport": "Airport Transfer",
+      "cityTour": "City Tour",
+      "corporate": "Corporate Transport",
+      "events": "Special Events"
+    },
+    "contactTitle": "Contact",
+    "rights": "© {year} <a href=\"https://github.com/PatrickSimoes\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-amber-400 ml-2\">Patrick Simões</a>. All rights reserved."
   }
 }
