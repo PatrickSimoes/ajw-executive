@@ -2,5 +2,15 @@
   "whatsapp": {
     "reserve": "Hola, me gustaría reservar el {vehicle}.",
     "info": "Hola, me gustaría obtener más información."
+  },
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "fleet": "Flota",
+    "about": "Sobre",
+    "contact": "Contacto"
+  },
+  "buttons": {
+    "reserveVehicle": "Reservar Vehículo"
   }
 }
