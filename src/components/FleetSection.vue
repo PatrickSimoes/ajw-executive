@@ -92,6 +92,6 @@ const vehicles: Vehicle[] = [
 ]
 
 function whatsappLink(vehicleName: string): string {
-  return generateWhatsAppLink(`Olá, gostaria de reservar o ${vehicleName}.`)
+  return generateWhatsAppLink('whatsapp.reserve', { vehicle: vehicleName })
 }
 </script>

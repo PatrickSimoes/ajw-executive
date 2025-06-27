@@ -45,7 +45,7 @@
 <script setup lang="ts">
 import { generateWhatsAppLink } from '@/utils/whatsapp'
 
-const whatsappLink = generateWhatsAppLink('Olá, gostaria de mais informações.')
+const whatsappLink = generateWhatsAppLink('whatsapp.info')
 </script>
 
 <style scoped></style>
