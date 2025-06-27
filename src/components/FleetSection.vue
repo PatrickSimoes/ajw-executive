@@ -31,7 +31,7 @@
 
             <a :href="whatsappLink(vehicle.name)" target="_blank" rel="noopener"
               class="mt-auto inline-block bg-amber-500 text-black text-center w-full py-3 rounded-lg font-bold text-lg hover:bg-amber-400 transition-all">
-              Reservar Veículo
+              {{ t('buttons.reserveVehicle') }}
             </a>
           </div>
         </div>
@@ -47,6 +47,9 @@ import tcross from '@/assets/fleet/t-cros/Tcross-1.jpeg'
 import corolla from '@/assets/fleet/corolla-hybrido-altis/corolla-hybrido.jpeg'
 import type { Vehicle } from './interfaces/fleet.interface'
 import { generateWhatsAppLink } from '@/utils/whatsapp'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 const vehicles: Vehicle[] = [
   {
@@ -92,6 +95,6 @@ const vehicles: Vehicle[] = [
 ]
 
 function whatsappLink(vehicleName: string): string {
-  return generateWhatsAppLink(`Olá, gostaria de reservar o ${vehicleName}.`)
+  return generateWhatsAppLink('whatsapp.reserve', { vehicle: vehicleName })
 }
 </script>

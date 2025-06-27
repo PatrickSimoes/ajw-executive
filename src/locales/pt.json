@@ -1,0 +1,16 @@
+{
+  "whatsapp": {
+    "reserve": "Olá, gostaria de reservar o {vehicle}.",
+    "info": "Olá, gostaria de mais informações."
+  },
+  "nav": {
+    "home": "Início",
+    "services": "Serviços",
+    "fleet": "Frota",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "buttons": {
+    "reserveVehicle": "Reservar Veículo"
+  }
+}
