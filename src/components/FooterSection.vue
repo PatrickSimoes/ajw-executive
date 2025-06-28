@@ -3,14 +3,14 @@
     <div class="container mx-auto px-6">
       <div class="grid md:grid-cols-4 gap-8">
         <div class="md:col-span-2">
-          <div class="flex items-center space-x-2 sm:space-x-3 mb-4">
+          <div class="flex items-center space-x-1 sm:space-x-2 md:space-x-3 mb-4">
             <img
               src="../assets/MainLogo-sem-fundo.png"
               alt="AJW Executive"
-              class="h-10 w-10 sm:h-12 sm:w-12 flex-shrink-0 object-contain"
+              class="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 flex-shrink-0 object-contain"
             />
             <div class="text-white">
-              <h3 class="text-lg sm:text-xl font-bold">AJW</h3>
+              <h3 class="text-base sm:text-lg md:text-xl font-bold">AJW</h3>
               <p class="text-xs sm:text-sm text-amber-400">EXECUTIVE</p>
             </div>
           </div>

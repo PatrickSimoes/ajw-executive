@@ -12,7 +12,7 @@
           <img
             src="../assets/MainLogo-sem-fundo.png"
             alt="AJW Executive"
-            class="h-40 w-40 md:h-56 md:w-56 mx-auto mb-6 filter drop-shadow-2xl object-contain"
+            class="h-32 w-32 sm:h-40 sm:w-40 md:h-56 md:w-56 mx-auto mb-6 filter drop-shadow-2xl object-contain"
           />
         </div>
 
