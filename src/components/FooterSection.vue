@@ -18,18 +18,24 @@
         <div>
           <h4 class="text-white font-bold mb-4">{{ t('footerSection.servicesTitle') }}</h4>
           <ul class="space-y-2 text-gray-300">
-            <li><a href="#services" class="hover:text-amber-400 transition-colors">{{ t('footerSection.services.airport') }}</a></li>
-            <li><a href="#services" class="hover:text-amber-400 transition-colors">{{ t('footerSection.services.cityTour') }}</a></li>
-            <li><a href="#services" class="hover:text-amber-400 transition-colors">{{ t('footerSection.services.corporate') }}</a></li>
-            <li><a href="#services" class="hover:text-amber-400 transition-colors">{{ t('footerSection.services.events') }}</a></li>
+            <li><a href="#services" class="hover:text-amber-400 transition-colors">{{
+              t('footerSection.services.airport') }}</a></li>
+            <li><a href="#services" class="hover:text-amber-400 transition-colors">{{
+              t('footerSection.services.cityTour') }}</a></li>
+            <li><a href="#services" class="hover:text-amber-400 transition-colors">{{
+              t('footerSection.services.corporate') }}</a></li>
+            <li><a href="#services" class="hover:text-amber-400 transition-colors">{{ t('footerSection.services.events')
+                }}</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="text-white font-bold mb-4">{{ t('footerSection.contactTitle') }}</h4>
           <ul class="space-y-2 text-gray-300">
-            <li>(11) 99999-9999</li>
-            <li>contato@ajwexecutive.com.br</li>
+            <li>{{ defaultWhatsAppNumber }}</li>
+            <li> <a href="mailto:ajwexecutivedrivers@outlook.com"
+                class="hover:underline">ajwexecutivedrivers@outlook.com</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -42,6 +48,7 @@
 </template>
 
 <script setup lang="ts">
+import { defaultWhatsAppNumber } from '@/utils/whatsapp';
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()

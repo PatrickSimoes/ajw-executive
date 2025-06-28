@@ -29,21 +29,23 @@
               </div>
             </div>
 
-            <a :href="whatsappLink(vehicle.name)" target="_blank" rel="noopener"
-              class="mt-auto inline-block bg-amber-500 text-black text-center w-full py-3 rounded-lg font-bold text-lg hover:bg-amber-400 transition-all">
-              {{ t('buttons.reserveVehicle') }}
-            </a>
           </div>
         </div>
+      </div>
+      <div class="w-full flex justify-center mt-10">
+        <a :href="whatsappLink()" target="_blank" rel="noopener"
+          class="inline-block bg-amber-500 text-black py-3 px-8 rounded-lg font-bold text-lg hover:bg-amber-400 transition-all">
+          {{ t('buttons.reserveVehicle') }}
+        </a>
       </div>
     </div>
   </section>
 </template>
 
 <script lang="ts" setup>
-import bydKing1 from '@/assets/fleet/byd-king/byd-king-1.jpeg'
+import bydKing1 from '@/assets/fleet/byd-king/byd-king-1.png'
 import sentra from '@/assets/fleet/sentra/sentra-1.jpeg'
-import tcross from '@/assets/fleet/t-cros/Tcross-1.jpeg'
+import civic from '@/assets/fleet/civic/civic-2019.png'
 import corolla from '@/assets/fleet/corolla-hybrido-altis/corolla-hybrido.jpeg'
 import type { Vehicle } from './interfaces/fleet.interface'
 import { generateWhatsAppLink } from '@/utils/whatsapp'
@@ -73,13 +75,13 @@ const vehicles: Vehicle[] = [
     ]
   },
   {
-    name: 'Volkswagen T-Cross',
-    image: tcross,
+    name: 'Honda Civic',
+    image: civic,
     features: [
-      'fleetSection.vehicles.tcross.features.0',
-      'fleetSection.vehicles.tcross.features.1',
-      'fleetSection.vehicles.tcross.features.2',
-      'fleetSection.vehicles.tcross.features.3'
+      'fleetSection.vehicles.civic.features.0',
+      'fleetSection.vehicles.civic.features.1',
+      'fleetSection.vehicles.civic.features.2',
+      'fleetSection.vehicles.civic.features.3'
     ]
   },
   {
@@ -94,7 +96,7 @@ const vehicles: Vehicle[] = [
   }
 ]
 
-function whatsappLink(vehicleName: string): string {
-  return generateWhatsAppLink('whatsapp.reserve', { vehicle: vehicleName })
+function whatsappLink(): string {
+  return generateWhatsAppLink('whatsapp.reserve')
 }
 </script>

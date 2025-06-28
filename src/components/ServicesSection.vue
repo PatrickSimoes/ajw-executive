@@ -31,8 +31,7 @@
             </div>
           </div>
 
-          <!-- CTA dentro do card -->
-          <a href="#contact"
+          <a :href="whatsappLink(service)" target="_blank" rel="noopener"
             class="mt-6 inline-block bg-amber-500 text-black text-center w-full py-3 rounded-lg font-bold text-lg hover:bg-amber-400 transition-all transform hover:scale-105">
             {{ t('servicesSection.cta') }}
           </a>
@@ -46,6 +45,7 @@
 import { Car, MapPin, Music, Globe } from 'lucide-vue-next'
 import type { Service } from './interfaces/services.interface'
 import { useI18n } from 'vue-i18n'
+import { generateWhatsAppLink } from '@/utils/whatsapp'
 
 const { t } = useI18n()
 
@@ -93,4 +93,15 @@ const services: Service[] = [
     ],
   },
 ]
+
+function whatsappLink(service: Service): string {
+  const serviceName = t(service.title)
+  console.log(t('servicesSection.solicitation.service', { service: "Transfer Executivo" }))
+
+  return generateWhatsAppLink(
+    t('servicesSection.solicitation.service', { service: serviceName })
+  )
+}
+
+
 </script>

@@ -1,6 +1,6 @@
 {
   "whatsapp": {
-    "reserve": "Hello, I'd like to book the {vehicle}.",
+    "reserve": "Hello! I’d like to make a booking. Which vehicles are available?",
     "info": "Hello, I'd like more information."
   },
   "nav": {
@@ -11,19 +11,22 @@
     "contact": "Contact"
   },
   "buttons": {
-    "reserveVehicle": "Book Vehicle"
+    "reserveVehicle": "Book your trip now"
   },
   "hero": {
     "transport": "TRANSPORT",
     "executive": "EXECUTIVE",
     "subtitle": "Excellence in urban mobility with comfort, safety and punctuality. Your transportation experience will never be the same.",
     "ctaServices": "Our Services",
-    "ctaQuote": "Request Quote"
+    "ctaQuote": "Get your quote now"
   },
   "servicesSection": {
     "title": "Our Services",
     "subtitle": "Complete executive transport solutions for all your needs.",
     "cta": "Request Service",
+    "solicitation": {
+      "service": "I would like to request the service of {service}"
+    },
     "items": {
       "transfer": {
         "title": "Transfer",
@@ -71,6 +74,7 @@
     "vehicles": {
       "bydKing": {
         "features": [
+          "Onboard service",
           "Quiet interior that promotes relaxation",
           "Ample space with guaranteed comfort",
           "Premium finish that surrounds everyone on board",
@@ -79,14 +83,16 @@
       },
       "sentra": {
         "features": [
+          "Onboard service",
           "Ergonomic seats that prevent fatigue",
           "Dual-zone climate control for individual comfort",
           "Immersive sound system for your entertainment",
           "Sophisticated environment that inspires focus and well-being"
         ]
       },
-      "tcross": {
+      "civic": {
         "features": [
+          "Onboard service",
           "Cozy cabin that ensures urban comfort",
           "Customizable ambient lighting for any mood",
           "Optimized luggage space for your belongings",
@@ -95,6 +101,7 @@
       },
       "corolla": {
         "features": [
+          "Onboard service",
           "Smooth and quiet rides for total relaxation",
           "Fewer stops, more time of continuous comfort",
           "Climatized cabin for perfect temperature",

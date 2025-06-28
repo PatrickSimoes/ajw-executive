@@ -1,6 +1,6 @@
 {
   "whatsapp": {
-    "reserve": "Hola, me gustaría reservar el {vehicle}.",
+    "reserve": "¡Hola! Me gustaría hacer una reserva. ¿Qué vehículos están disponibles?",
     "info": "Hola, me gustaría obtener más información."
   },
   "nav": {
@@ -11,19 +11,22 @@
     "contact": "Contacto"
   },
   "buttons": {
-    "reserveVehicle": "Reservar Vehículo"
+    "reserveVehicle": "Reserve ya su viaje"
   },
   "hero": {
     "transport": "TRANSPORTE",
     "executive": "EJECUTIVO",
     "subtitle": "Excelencia en movilidad urbana con comodidad, seguridad y puntualidad. Tu experiencia de transporte nunca será la misma.",
     "ctaServices": "Nuestros Servicios",
-    "ctaQuote": "Solicitar Presupuesto"
+    "ctaQuote": "Haga ya su cotización aquí"
   },
   "servicesSection": {
     "title": "Nuestros Servicios",
     "subtitle": "Soluciones completas de transporte ejecutivo para todas tus necesidades.",
     "cta": "Solicitar Servicio",
+    "solicitation": {
+      "service": "Me gustaría solicitar el servicio de {service}"
+    },
     "items": {
       "transfer": {
         "title": "Transfer",
@@ -71,6 +74,7 @@
     "vehicles": {
       "bydKing": {
         "features": [
+          "Servicio a bordo",
           "Interior silencioso que promueve la relajación",
           "Espacio amplio con comodidad garantizada",
           "Acabado premium que envuelve a todos a bordo",
@@ -79,14 +83,16 @@
       },
       "sentra": {
         "features": [
+          "Servicio a bordo",
           "Asientos ergonómicos que evitan el cansancio",
           "Climatización dual-zone para comodidad individual",
           "Sistema de sonido envolvente para tu entretenimiento",
           "Ambiente sofisticado que inspira enfoque y bienestar"
         ]
       },
-      "tcross": {
+      "civic": {
         "features": [
+          "Servicio a bordo",
           "Cabina acogedora que garantiza comodidad urbana",
           "Iluminación ambiental personalizable para cualquier clima",
           "Espacio de equipaje optimizado para tus pertenencias",
@@ -95,6 +101,7 @@
       },
       "corolla": {
         "features": [
+          "Servicio a bordo",
           "Viajes suaves y silenciosos para relajación total",
           "Menos paradas, más tiempo de comodidad continua",
           "Cabina climatizada para temperatura perfecta",

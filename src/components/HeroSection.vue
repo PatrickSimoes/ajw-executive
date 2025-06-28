@@ -27,7 +27,7 @@
             class="bg-amber-500 text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-amber-400 transition-all transform hover:scale-105 shadow-lg">
             {{ t('hero.ctaServices') }}
           </a>
-          <a href="#contact"
+          <a :href="whatsappLink()"
             class="border-2 border-amber-500 text-amber-400 px-8 py-4 rounded-lg font-bold text-lg hover:bg-amber-500 hover:text-black transition-all">
             {{ t('hero.ctaQuote') }}
           </a>
@@ -45,6 +45,11 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import { generateWhatsAppLink } from '@/utils/whatsapp'
 
 const { t } = useI18n()
+
+function whatsappLink(): string {
+  return generateWhatsAppLink('whatsapp.info')
+}
 </script>
