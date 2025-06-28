@@ -3,11 +3,15 @@
     <div class="container mx-auto px-6">
       <div class="grid md:grid-cols-4 gap-8">
         <div class="md:col-span-2">
-          <div class="flex items-center space-x-3 mb-4">
-            <img src="../assets/MainLogo-sem-fundo.png" alt="AJW Executive" class="h-12 w-12" />
+          <div class="flex items-center space-x-2 sm:space-x-3 mb-4">
+            <img
+              src="../assets/MainLogo-sem-fundo.png"
+              alt="AJW Executive"
+              class="h-10 w-10 sm:h-12 sm:w-12 flex-shrink-0 object-contain"
+            />
             <div class="text-white">
-              <h3 class="text-xl font-bold">AJW</h3>
-              <p class="text-sm text-amber-400">EXECUTIVE</p>
+              <h3 class="text-lg sm:text-xl font-bold">AJW</h3>
+              <p class="text-xs sm:text-sm text-amber-400">EXECUTIVE</p>
             </div>
           </div>
           <p class="text-gray-300 mb-4 max-w-md">

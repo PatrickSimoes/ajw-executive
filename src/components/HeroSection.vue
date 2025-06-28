@@ -9,8 +9,11 @@
     <div class="container mx-auto px-6 relative z-10">
       <div class="max-w-4xl mx-auto text-center">
         <div class="mb-8">
-          <img src="../assets/MainLogo-sem-fundo.png" alt="AJW Executive"
-            class="h-65 w-65 mx-auto mb-6 filter drop-shadow-2xl" />
+          <img
+            src="../assets/MainLogo-sem-fundo.png"
+            alt="AJW Executive"
+            class="h-40 w-40 md:h-56 md:w-56 mx-auto mb-6 filter drop-shadow-2xl object-contain"
+          />
         </div>
 
         <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
