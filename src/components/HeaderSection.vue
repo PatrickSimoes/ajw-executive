@@ -2,11 +2,15 @@
   <header class="fixed top-0 w-full bg-black/95 backdrop-blur-sm z-50 border-b border-amber-500/20">
     <div class="container mx-auto px-6 py-4">
       <div class="flex items-center justify-between">
-        <div class="flex items-center space-x-3">
-          <img src="../assets/MainLogo-sem-fundo.png" alt="AJW Executive" class="h-12 w-12" />
+        <div class="flex items-center space-x-1 sm:space-x-2 md:space-x-3">
+          <img
+            src="../assets/MainLogo-sem-fundo.png"
+            alt="AJW Executive"
+            class="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 flex-shrink-0 object-contain"
+          />
           <div class="text-white">
-            <h1 class="text-xl font-bold">AJW</h1>
-            <p class="text-sm text-amber-400">EXECUTIVE</p>
+            <h1 class="text-base sm:text-lg md:text-xl font-bold">AJW</h1>
+            <p class="text-xs sm:text-sm text-amber-400">EXECUTIVE</p>
           </div>
         </div>
 
