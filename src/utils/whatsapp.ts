@@ -1,4 +1,4 @@
-export const defaultWhatsAppNumber = '554191922590'
+export const defaultWhatsAppNumber = '5541995086935'
 
 import i18n from '@/i18n'
 
