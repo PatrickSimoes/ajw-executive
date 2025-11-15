@@ -136,6 +136,37 @@
     },
     "imageAlt": "{company} Professionalism"
   },
+  "reviewsSection": {
+    "title": "Google Reviews",
+    "subtitle": "See what our customers say about their experience with AJW Executive.",
+    "reviews": [
+      {
+        "name": "Patrick Simões",
+        "meta": "14 reviews",
+        "comment": "The driver drove very well, the car was clean, and the trip was very smooth. Without a doubt, it was the best transfer I've ever had."
+      },
+      {
+        "name": "Rubens Murilo Marcolino",
+        "meta": "2 reviews · 1 month ago",
+        "comment": "Helpful driver, good handling, vehicle in good condition, truly quality service. I needed to go from the airport to the hotel in Curitiba."
+      },
+      {
+        "name": "João Dutra",
+        "meta": "4 reviews · 1 photo · 1 month ago",
+        "comment": "Very calm driver, a trip with the comfort and safety of someone who provides excellent service. I went from the airport to downtown Curitiba."
+      },
+      {
+        "name": "Jonatha Rabelo",
+        "meta": "1 review · 1 month ago",
+        "comment": "Great service, highly recommend. Impeccable car."
+      },
+      {
+        "name": "Aleff Max",
+        "meta": "3 reviews · 1 month ago",
+        "comment": "Very good service, flawless and smooth trip."
+      }
+    ]
+  },
   "contactSection": {
     "title": "Contact Us",
     "subtitle": "Get in touch through our social networks",
@@ -153,6 +184,6 @@
       "events": "Special Events"
     },
     "contactTitle": "Contact",
-    "rights": "© {year} <a href=\"https://github.com/PatrickSimoes\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-amber-400 ml-2\">Patrick Simões</a>. All rights reserved."
+    "rights": "© {year} <a href=\"https://www.linkedin.com/in/patrick-simoes/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-amber-400 ml-2\">Patrick Simões</a>. All rights reserved."
   }
 }
