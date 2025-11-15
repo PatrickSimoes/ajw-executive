@@ -52,41 +52,19 @@ interface Review {
   comment: string
 }
 
-const { t } = useI18n()
+const { t, tm } = useI18n()
 
-const reviews: Review[] = [
-  {
-    name: 'Patrick Simões',
-    meta: '14 avaliações',
-    comment:
-      'O motorista dirigia muito bem, o carro estava limpo e a viagem foi muito tranquila. Foi, sem dúvida, o melhor transfer que já tive.'
-  },
-  {
-    name: 'Rubens Murilo Marcolino',
-    meta: '2 avaliações · há 1 mês',
-    comment:
-      'Motorista prestativo, boa dirigibilidade, veículo em bom estado, serviço realmente de qualidade. Precisei ir do aeroporto até o hotel em Curitiba.'
-  },
-  {
-    name: 'João Dutra',
-    meta: '4 avaliações · 1 foto · há 1 mês',
-    comment:
-      'Motorista bem tranquilo, viagem no conforto e segurança de quem faz o serviço com excelência. Fui do aeroporto para o centro de Curitiba.'
-  },
-  {
-    name: 'Jonatha Rabelo',
-    meta: '1 avaliação · há 1 mês',
-    comment: 'Ótimo atendimento, super recomendo. Carro impecável.'
-  },
-  {
-    name: 'Aleff Max',
-    meta: '3 avaliações · há 1 mês',
-    comment: 'Serviço muito bom, viagem impecável e tranquila.'
+const localizedReviews = computed<Review[]>(() => {
+  const reviews = tm('reviewsSection.reviews') as Review[] | undefined
+  if (!Array.isArray(reviews)) {
+    return []
   }
-]
+
+  return reviews.filter((review) => Boolean(review.comment?.trim().length))
+})
 
 const displayedReviews = computed(() => {
-  const available = reviews.filter((review) => review.comment.trim().length > 0)
+  const available = localizedReviews.value
   const shuffled = [...available]
   for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1))
