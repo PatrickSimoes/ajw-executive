@@ -136,6 +136,10 @@
     },
     "imageAlt": "Profesionalismo {company}"
   },
+  "reviewsSection": {
+    "title": "Reseñas en Google",
+    "subtitle": "Descubre lo que nuestros clientes dicen sobre su experiencia con AJW Executive."
+  },
   "contactSection": {
     "title": "Contacto",
     "subtitle": "Ponte en contacto con nosotros a través de nuestras redes sociales",
